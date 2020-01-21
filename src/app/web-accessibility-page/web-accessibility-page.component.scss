@@ -1,0 +1,39 @@
+* {
+    font-family: 'sofia-pro';
+}
+
+.home-body{
+    margin: 5vw;
+    margin-top: 0vw;
+}
+
+.title{
+    font-size: 75px;
+    display: inline;
+}
+
+.intro{
+    font-size: 25px;
+}
+
+
+.description{
+    font-size: 25px;
+}
+
+.home-page-button{
+    background-color: #0078d7;
+    color: white;
+    font-size: 25px;
+    font-family: sofia-pro,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-group .home-page-button{
+    width: auto;
+    padding: 10px 24px;
+    margin: 10px;
+    width: 25%;
+    display: block;
+}
