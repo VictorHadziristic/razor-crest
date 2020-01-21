@@ -1,0 +1,48 @@
+<mat-sidenav-container class="sidenav-container">
+
+    <!-- SIDENAV -->
+  
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="false">
+      <mat-toolbar>Menu</mat-toolbar>
+      <mat-nav-list>
+       
+        <a mat-list-item routerLink="/" (click)="drawer.close()">Home</a>
+        <a mat-list-item routerLink="/labs" (click)="drawer.close()">Labs</a>
+        <a mat-list-item routerLink="/assignments" (click)="drawer.close()">Assignments</a>
+        <a mat-list-item routerLink="/web-usability" (click)="drawer.close()">Web Usability</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+  
+    <!-- TOP TOOLBAR-->
+  
+      <mat-toolbar>
+        <button 
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+  
+  
+          <mat-icon aria-label="Side nav toggle icon">Menu</mat-icon>
+        </button>
+        <span class="logo" routerLink="/"><img class="manImg" src="assets/logo.png"></span>
+  
+        <span class="fill-space"></span>
+        <div *ngIf="!(isHandset$ | async)">
+          <a mat-button class="nav-custom" routerLink="/labs">☄️ Labs</a>
+          <a mat-button class="nav-custom" routerLink="/assignments">🌌 Assignments</a>
+          <a mat-button class="nav-custom" routerLink="/web-usability">🌐 Web Usability</a>
+  
+        </div>
+      </mat-toolbar>
+  
+      <!-- TRANSCLUSION -->
+      <ng-content></ng-content>
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>
