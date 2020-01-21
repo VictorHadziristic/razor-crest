@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { LabsPageComponent } from './labs-page/labs-page.component';
 import { AssignmentsPageComponent } from './assignments-page/assignments-page.component';
 import { WebAccessibilityPageComponent } from './web-accessibility-page/web-accessibility-page.component';
+import { Lab2Component } from './lab2/lab2.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { WebAccessibilityPageComponent } from './web-accessibility-page/web-acce
     //HomePageComponent,
     LabsPageComponent,
     AssignmentsPageComponent,
-    WebAccessibilityPageComponent
+    WebAccessibilityPageComponent,
+    Lab2Component
   ],
   imports: [
     BrowserModule,
