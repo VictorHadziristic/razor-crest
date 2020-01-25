@@ -1,0 +1,35 @@
+* {
+    font-family: 'sofia-pro';
+}
+
+.body{
+    margin: 5vw;
+    margin-top: 0vw;
+}
+
+.title{
+    font-size: 75px;
+    display: inline;
+}
+
+.subtitle{
+    font-size: 50px;
+    margin-top: 0;
+    color: grey;
+}
+
+#bio-pic{
+    float: right;
+    width: 50%;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size:25px;
+}
+
+#jump-link{
+    color: #0078d7;
+    font-size: 25px;
+}
