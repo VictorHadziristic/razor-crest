@@ -1,0 +1,73 @@
+<div class="body">
+    <p class ="title">Lab 3</p>
+    <p class ="subtitle">Images in web usability</p>
+    <mat-card>
+        <h1>Image modification</h1>
+            <p>
+                <img *ngIf="!isActive" (click)="onClick()" class="pic" src="/assets/MustardCar.jpg" alt="Mustard Car">
+                <img *ngIf="isActive" (click)="onClick()" class="pic" src="/assets/Ketchustard Car.png" alt="Ketchustard Car">
+                <b>Click the image to turn half the car red!<br></b>
+                I took this royalty free image of a yellow car, edited it in Adobe Photoshop so that half of the car is painted red.
+                I used the selection tool to select half of the car, and modified it's hue in a new layeer. To illustrate this
+                you can click on the image and it will alternate between the original and the edited version.
+            </p>
+        <p *ngIf="!isActive">The car is now in it's original state</p>
+        <p *ngIf="isActive">The car is now in it's edited state</p>
+    </mat-card>
+    <div><br></div>
+    <mat-card>
+        <h1>Illustration</h1>
+        <p>
+            <img class="pic" [ngClass]="[imgStyle]" (click)="onChangeStyle()" src="assets/HavenSocialHouse.png" alt="Haven Logo">
+            <b>Click the image to see that it has a transparent background!<br></b>
+            I created this logo in Adobe Illustrator, so its source it is a vector image. I exported it to a .PNG with a transparent background.
+            If you click the image, it will change the CSS styling of its container, and you can see that the logo has transparency.
+        </p>
+    </mat-card>
+
+    <h1>Lab question responses</h1>
+    <h2><b>1. What's your modification? Any thoughts(why)? Steps?</b></h2>
+    <p>
+        For the first image on this page, I modified the image so that half of the car would be a different color. I used photoshop
+        to accomplish this. I selected half of the image, placed it into a new layer, selected the colored part of the car using
+        the selection tool and modified that selection using Photoshop's Hue/Saturation menu. I thought that making this modification
+        along with the interactive component on this page would be a neat example to show off image modifications.
+    </p>
+    <h2><b>2. What are the differences you notice from the modification (e.g., file size change? Quality change?)</b></h2>
+    <p>
+        The image is originally a JPEG, which is a lossy format. Once I made my modifications, I exported the image as a PNG, a lossless format.
+        The interactive component above loads either the orignial JPEG or the modified PNG, if you look closely, there really isn't a noticeable
+        differnece in quality. This goes to show that there isn't much argument for lossless over lossy formats when it comes to web development.
+        But the difference lies in the filesize, you might even notice that your first click on the component will cause a hiccup and refresh the page.
+        This stems from the fact that the PNG is nearly 6 times the size of the JPEG version.
+    </p>
+    <h2><b>3. Is there any special consideration when you created/drew the new image(s)? What were the steps?</b></h2>
+    <p>
+        I thought I would make a logo for this example, and I wanted to demonstrate one of the characteristics of a particular format,
+        namely, PNG. I drew up the logo in Illustrator, selected PNG as the output format and selected "transparent background".
+        Now I could not really show off that the image indeed had a transparent background if it was sitting on a static white background.
+        So I made a little front-end code so that when the user clicks on it, the CSS styling changes the background of the image,
+        and this demonstrates that the image does indeed have an alpha channel, which is what controls pixel transparency.
+    </p>
+    <br>
+    <h1>Reflection</h1>
+    <h2><b>1. How hard do you rate this lab in a range 1-10, where 1 is easiest, 10 is the hardest?</b></h2>
+    <p>
+        I would rate this Lab a 7/10. I have quite a bit of experience using Photoshop and Illustrator, so creating examples
+        was trivial for me. But I would imagine this process would take some students a little bit more time.
+    </p>
+    <h2><b>2. What’s the difficulty?</b></h2>
+    <p>
+        The difficult part is spending the time to find royalty free images, editing them and creating an illustration. This
+        really isn't that difficult, but I added my own spin to make this lab interactive, which added a bit of complexity.
+    </p>
+    <h2><b>3. How did you solve it?</b></h2>
+    <p>
+        I completed this lab using Adobe Photoshop and Illustrator for my example images, thought of some ways to demonstrate
+        some more of the course material. Then I used Angular front-end code to make the images interative.
+    </p>
+    <h2><b>4. Is it Fun? </b></h2>
+    <p>
+        I would say this lab is kind of fun, especially when I got to put my own creative spin on it.
+    </p>
+</div>

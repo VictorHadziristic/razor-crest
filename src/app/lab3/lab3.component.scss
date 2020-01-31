@@ -1,0 +1,47 @@
+* {
+    font-family: 'sofia-pro';
+}
+
+.body{
+    margin: 5vw;
+    margin-top: 0vw;
+}
+
+.title{
+    font-size: 75px;
+    display: inline;
+}
+
+.subtitle{
+    font-size: 50px;
+    margin-top: 0;
+    color: grey;
+}
+
+.pic{
+    float: left;
+    width: 50%;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.transparent-pic{
+    float: left;
+    width: 50%;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    background-color: greenyellow;
+}
+
+p{
+    font-size:25px;
+}
+
+#jump-link{
+    color: #0078d7;
+    font-size: 25px;
+}
+
+mat-card{
+    overflow: auto;
+}

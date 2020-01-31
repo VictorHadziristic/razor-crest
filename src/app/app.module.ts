@@ -10,6 +10,7 @@ import { LabsPageComponent } from './labs-page/labs-page.component';
 import { AssignmentsPageComponent } from './assignments-page/assignments-page.component';
 import { WebAccessibilityPageComponent } from './web-accessibility-page/web-accessibility-page.component';
 import { Lab2Component } from './lab2/lab2.component';
+import { Lab3Component } from './lab3/lab3.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { Lab2Component } from './lab2/lab2.component';
     LabsPageComponent,
     AssignmentsPageComponent,
     WebAccessibilityPageComponent,
-    Lab2Component
+    Lab2Component,
+    Lab3Component
   ],
   imports: [
     BrowserModule,

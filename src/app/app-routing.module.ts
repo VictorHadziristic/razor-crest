@@ -5,6 +5,7 @@ import { AssignmentsPageComponent } from './assignments-page/assignments-page.co
 import { LabsPageComponent } from './labs-page/labs-page.component';
 import { WebAccessibilityPageComponent } from './web-accessibility-page/web-accessibility-page.component';
 import { Lab2Component } from './lab2/lab2.component';
+import { Lab3Component } from './lab3/lab3.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'assignments', component: AssignmentsPageComponent},
   {path: 'labs', component: LabsPageComponent},
   {path: 'web-usability', component: WebAccessibilityPageComponent},
-  {path: 'lab2', component: Lab2Component}
+  {path: 'lab2', component: Lab2Component},
+  {path: 'lab3', component: Lab3Component}
 ];
 
 @NgModule({
