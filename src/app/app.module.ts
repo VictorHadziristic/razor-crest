@@ -11,6 +11,7 @@ import { AssignmentsPageComponent } from './assignments-page/assignments-page.co
 import { WebAccessibilityPageComponent } from './web-accessibility-page/web-accessibility-page.component';
 import { Lab2Component } from './lab2/lab2.component';
 import { Lab3Component } from './lab3/lab3.component';
+import { Lab4Component } from './lab4/lab4.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { Lab3Component } from './lab3/lab3.component';
     AssignmentsPageComponent,
     WebAccessibilityPageComponent,
     Lab2Component,
-    Lab3Component
+    Lab3Component,
+    Lab4Component
   ],
   imports: [
     BrowserModule,
