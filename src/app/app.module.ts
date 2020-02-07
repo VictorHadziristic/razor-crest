@@ -23,7 +23,7 @@ import { Lab4Component } from './lab4/lab4.component';
     WebAccessibilityPageComponent,
     Lab2Component,
     Lab3Component,
-    Lab4Component
+    Lab4Component,
   ],
   imports: [
     BrowserModule,

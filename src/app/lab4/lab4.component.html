@@ -1,4 +1,69 @@
 <div class="body">
     <p class ="title">Lab 4</p>
     <p class ="subtitle">Audio in web usability</p>
+    <mat-card>
+        <h2>Audio file that I created</h2>
+        <p><b>Format: </b> FLAC</p>
+        <p><b>Length: </b> 19 Seconds</p>
+        <p><b>File Size: </b> 1.51 MB</p>
+        <p><b>Bit Rate: </b> 666 kbps</p>
+        <a (click)="playAudio1()" *ngIf="!Audio1Playing">▶️</a>
+        <a (click)="playAudio1()" *ngIf="Audio1Playing">⏸️</a>
+    </mat-card>
+    <br>
+    <mat-card>
+        <h2>Audio file that I created, then edited</h2>
+        <p><b>Format: </b> MP3</p>
+        <p><b>Length: </b> 19 Seconds</p>
+        <p><b>File Size: </b> 251 KB</p>
+        <p><b>Bit Rate: </b> 105 kbps</p>
+        <h3><b>My Modification: </b> Applied reverb effect, makes the audio have an echo, more-so when the audio is louder.</h3>
+        <a (click)="playAudio2()" *ngIf="!Audio2Playing">▶️</a>
+        <a (click)="playAudio2()" *ngIf="Audio2Playing">⏸️</a>
+    </mat-card>
+    <br>
+    <mat-card>
+        <h2>Fela Soul - Fela Soul -Deluxe Edition- - 09 Feel Good Inc. feat. Gorillaz</h2>
+        <p><b>Format: </b> MP3</p>
+        <p><b>Length: </b> 5 Minutes, 7 Seconds</p>
+        <p><b>File Size: </b> 9.88 MB</p>
+        <p><b>Bit Rate: </b> 267 kbps</p>
+        <a (click)="playAudio3()" *ngIf="!Audio3Playing">▶️</a>
+        <a (click)="playAudio3()" *ngIf="Audio3Playing">⏸️</a>
+    </mat-card>
+    <h1>Lab question responses</h1>
+    <h2><b>1. The reason of choosing the file format when creating your audio?</b></h2>
+    <p>
+        I recorded my audio on my phone which saved it as an .m4a format. This format doesn't work with
+        Audacity, so I converted it .FLAC to keep the audio quality as close to the source as possible.
+        Once I made my modifications, I exported the project to .MP3 a lossy format to demonstrate the space
+        saving capabilities of the lossy format.
+    </p>
+    <h2><b>2. The use of audio on your website regarding usability?</b></h2>
+    <p>
+        I use audio sparingly on my website, which is a good way to use audio in most cases. For this lab,
+        I implemented audio playback controls to allow the user to play and pause each audio clip as they pleased.
+        I would have liked to add volume controls as well, but time did not permit. I also included front-end code to 
+        ensure that no more than one audio clip was playing at a time, which would be disruptive to the user experience.
+    </p>
+    <h2><b>3. Any thoughts on different audio file formats, e.g., cons, pros, when to use?</b></h2>
+    <p>
+        In terms of lossless vs. lossy, you would want to use lossless in the cases where the audio really counts,
+        such as production or music playback on high-end audio equipment. With that, comes the cost of large file
+        sizes, which isn't the best for web usability. For the web, you want to use lossy formats where you get away 
+        with it, namely where the quality of the audio isn't important to the user in that instance.
+        <br><br>
+        In terms of individual formats, aside from format-equipment compatibility requirments, it mostly comes down to 
+        preference on the specific advantages of any one format over another.
+    </p>
+    <h2><b>4. Description of your editing on the file, e.g., cutting, assembly, fadein, fadeout, etc.?</b></h2>
+    <p>
+        Using Audacity, I applied a reverberation effect, which adds an echo to the sound file, creating lots of
+        individual sound waves that simulate the sound reflecting off of surfaces. Louder sounds in the orginial file 
+        will have more of an echo and sound more directional, softer sounds will have less of an echo and sound less directional. 
+        After that modfication, I exported the project to .MP3 as opposed to the original FLAC format.
+    </p>
+</div>
+<div class="footer">
+    <p>Page last modified: 7:46pm February 7th, 2020</p>
 </div>
