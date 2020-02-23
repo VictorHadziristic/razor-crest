@@ -36,7 +36,7 @@ const modules = [
   MatSnackBarModule,
   RouterModule,
   NgxPageScrollModule,
-  NgxPageScrollCoreModule
+  NgxPageScrollCoreModule,
 ];
 
 @NgModule({
