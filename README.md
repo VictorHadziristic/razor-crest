@@ -1,5 +1,7 @@
 # RazorCrest
 
+This is the source code for my personal/portfolio website. I am currently working on this website for Seneca's BTH645: Multimedia Elements for User Interfaces course.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
 ## Development server
